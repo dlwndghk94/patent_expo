@@ -16,7 +16,7 @@
                 <!-- The fileinput-button span is used to style the file input field as button -->
                 <form method="POST" action="/predict">
                 {% csrf_token %}
-                <input type="text" name="textfield">
+                <textarea name = "textfield" rows="10" cols="50"></textarea><br/>
                 <button type="predict" class = "btn btn-success">Upload text</button>
                 </form>
                 <!-- The loading indicator is shown during file processing -->

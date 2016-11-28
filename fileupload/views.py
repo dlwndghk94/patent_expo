@@ -34,7 +34,7 @@ class FileListView(ListView):
         response['Content-Disposition'] = 'inline; filename=files.json'
         return response
 
-def predict(request):
+def predict(request, *args, **kwargs):
     if request.method == 'POST':
         patent = request.POST.get('textfield', None)
         return HttpResponse(patent)
